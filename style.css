@@ -44,6 +44,7 @@ body {
 
 .page-container {
   padding: 1.1rem;
+  position: relative;
 }
 
 /* HEADER */
@@ -105,7 +106,8 @@ header {
   margin: 1.8em 0;
 }
 
-.header__tittle-btn {
+.header__tittle-btn,
+.card-btn {
   padding: 0.8em 2.8em;
   font-size: 0.8em;
   font-weight: 700;
@@ -114,6 +116,7 @@ header {
   background: var(--Pink);
   color: #fff;
   margin-bottom: 3em;
+  cursor: pointer;
 }
 
 .header__box {
@@ -162,17 +165,32 @@ header {
 }
 
 .register-btn {
+  position: relative;
+  bottom: -5em;
+  z-index: 100;
+  background: #fff;
+  margin: 0;
+  padding: 1.8em 0;
   height: auto;
 }
 
 .register-btn .card-tittle {
   margin: auto;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.card-btn {
+  margin-bottom: 0;
 }
 
 /* FOOTER */
 
 .foot__main {
+  font-family: var(--Open);
   background: var(--Very-Dark-Cyan);
+  padding: 3em 1em;
+  padding-top: 8em;
 }
 
 .foot__main-logo {
@@ -180,11 +198,77 @@ header {
     contrast(101%);
 }
 
+.foot-logo {
+  width: 40%;
+}
+
+.foot__main-info {
+  color: #fff;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.location .icon {
+  align-self: flex-start;
+  margin-top: 0.3em;
+}
+
+.icon {
+  margin-right: 0.9em;
+}
+
+.info {
+  font-size: 0.85rem;
+}
+
+.foot__contact-links {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  font-size: 0.9rem;
+  margin: 0.5em 0;
+  cursor: pointer;
+}
+
 /* Social */
 
+.social {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.social__btn {
+  margin: 0.3rem;
+  border: 2.6px solid #c6ccd2;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
 .social__btn-icon {
-  height: 1.5rem;
-  width: 1.8rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(14deg) brightness(105%)
+    contrast(101%);
+}
+
+.copyright-box {
+  text-align: center;
+  color: #fff;
+  font-size: 0.8rem;
 }
 
 /*  */
@@ -194,4 +278,10 @@ header {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 750px) {
+  * {
+    font-size: 1.2rem;
+  }
 }
