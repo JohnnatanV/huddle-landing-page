@@ -57,14 +57,14 @@ header {
   background-size: cover;
   background-attachment: local;
   background-repeat: no-repeat;
-  padding: 1em;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
 
 .top-bar {
-  margin: 0.5em 0;
-  margin-bottom: 2.5em;
+  margin: 0.5rem 0;
+  margin-bottom: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -83,11 +83,11 @@ header {
 .logo__btn {
   background: #fff;
   width: 38%;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-weight: 600;
   border: none;
-  padding: 0.3em;
-  border-radius: 2rem;
+  padding: 0.3rem;
+  border-radius: 1rem;
   box-shadow: 0 0 0.4rem #c6ccd2;
 }
 
@@ -98,36 +98,36 @@ header {
 .header__tittle-h2 {
   font-family: var(--Poppins);
   font-size: 1.4em;
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 .header__tittle-paragraph {
   font-family: var(--Open);
-  margin: 1.8em 0;
+  margin: 1.8rem 0;
 }
 
 .header__tittle-btn,
 .card-btn {
-  padding: 0.8em 2.8em;
+  padding: 0.8rem 2.8rem;
   font-size: 0.8em;
   font-weight: 700;
   border: none;
   border-radius: 2rem;
   background: var(--Pink);
   color: #fff;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
   cursor: pointer;
 }
 
 .header__box {
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 /* MAIN */
 
 .content {
   font-family: var(--Open);
-  font-size: 5rem;
+  font-size: 5em;
 }
 
 .content__info {
@@ -143,9 +143,9 @@ header {
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 2.5em auto;
-  padding: 2em;
-  border-radius: 1.2rem;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
   box-shadow: 0 0 0.8rem #c6ccd276;
 }
 
@@ -154,30 +154,30 @@ header {
 }
 
 .card-tittle {
-  font-size: 1.15rem;
-  margin-top: 1.5em;
+  font-size: 1.15em;
+  margin-top: 1.5rem;
 }
 
-.card-info {
-  font-size: 0.8rem;
-  margin: 1.5em 0;
+.card-content {
+  font-size: 0.8em;
+  margin: 1.5rem 0;
   opacity: 0.45;
 }
 
 .register-btn {
   position: relative;
-  bottom: -5em;
+  bottom: -5rem;
   z-index: 100;
   background: #fff;
-  margin: 0;
-  padding: 1.8em 0;
+  margin: auto 0;
+  padding: 1.8rem 0;
   height: auto;
 }
 
 .register-btn .card-tittle {
   margin: auto;
   margin-bottom: 1.5rem;
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 
 .card-btn {
@@ -189,8 +189,8 @@ header {
 .foot__main {
   font-family: var(--Open);
   background: var(--Very-Dark-Cyan);
-  padding: 3em 1em;
-  padding-top: 8em;
+  padding: 3rem 1rem;
+  padding-top: 8rem;
 }
 
 .foot__main-logo {
@@ -210,20 +210,20 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 .location .icon {
   align-self: flex-start;
-  margin-top: 0.3em;
+  margin-top: 0.3rem;
 }
 
 .icon {
-  margin-right: 0.9em;
+  margin-right: 0.9rem;
 }
 
 .info {
-  font-size: 0.85rem;
+  font-size: 0.85em;
 }
 
 .foot__contact-links {
@@ -233,8 +233,8 @@ header {
 }
 
 .link {
-  font-size: 0.9rem;
-  margin: 0.5em 0;
+  font-size: 0.9em;
+  margin: 0.5rem 0;
   cursor: pointer;
 }
 
@@ -245,12 +245,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 .social__btn {
   margin: 0.3rem;
-  border: 2.6px solid #c6ccd2;
+  border: 0.14rem solid #c6ccd2;
   display: flex;
   align-items: center;
   padding: 0.5rem;
@@ -268,7 +268,7 @@ header {
 .copyright-box {
   text-align: center;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 
 /*  */
@@ -283,5 +283,19 @@ header {
 @media screen and (min-width: 750px) {
   * {
     font-size: 1.2rem;
+  }
+
+  .content__info-card {
+    flex-wrap: nowrap;
+  }
+
+  .register-btn {
+    margin: auto;
+    width: 70%;
+    flex-direction: column;
+  }
+
+  .card-pic {
+    width: 50%;
   }
 }
